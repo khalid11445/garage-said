@@ -1,0 +1,204 @@
+{
+  "Nav": {
+    "services": "Services",
+    "shop": "Boutique",
+    "about": "À propos",
+    "contact": "Contact",
+    "book": "Prendre RDV"
+  },
+  "Hero": {
+    "badge": "Aïn Leuh · Ouvert 7j/7",
+    "title": "Votre voiture entre de bonnes mains",
+    "subtitle": "Mécanique, carrosserie, pneus, vidange et diagnostic pour toutes les marques. Prenez rendez-vous en quelques clics.",
+    "cta": "Prendre rendez-vous",
+    "whatsapp": "Écrire sur WhatsApp",
+    "whatsappMessage": "Bonjour, je souhaite des informations sur vos services."
+  },
+  "Services": {
+    "title": "Nos services",
+    "mechanic": { "name": "Mécanique générale", "desc": "Réparation et entretien de tous types de moteurs et de pannes." },
+    "bodywork": { "name": "Carrosserie", "desc": "Réparation de carrosserie et peinture, avec un travail soigné." },
+    "tires": { "name": "Pneus", "desc": "Remplacement, montage et équilibrage de vos pneus." },
+    "oil": { "name": "Vidange", "desc": "Vidange et changement de filtres, rapide et propre." },
+    "inspection": { "name": "Contrôle technique", "desc": "Préparez votre véhicule avant le passage au contrôle." },
+    "diagnostic": { "name": "Diagnostic", "desc": "Diagnostic électronique précis pour trouver l'origine de la panne." }
+  },
+  "Footer": {
+    "address": "Aïn Leuh, Maroc",
+    "hours": "Ouvert tous les jours"
+  },
+  "Booking": {
+    "title": "Prendre rendez-vous",
+    "step1": "Vos infos",
+    "step2": "Le problème",
+    "step3": "Causes possibles",
+    "step4": "Rendez-vous",
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "brand": "Marque",
+    "model": "Modèle",
+    "plate": "Immatriculation (facultatif)",
+    "service": "Service souhaité",
+    "selectService": "Choisir un service",
+    "next": "Suivant",
+    "back": "Retour",
+    "describeTitle": "Décrivez le problème",
+    "describeHint": "Choisissez les symptômes que vous constatez (plusieurs choix possibles).",
+    "describePlaceholder": "Décrivez le problème avec vos mots (facultatif)",
+    "causesTitle": "Causes possibles",
+    "causesNote": "Ce ne sont que des indications. Seul le diagnostic au garage fait foi.",
+    "noSymptom": "Vous n'avez choisi aucun symptôme. Vous pouvez continuer pour prendre rendez-vous, le diagnostic se fera au garage.",
+    "dateTitle": "Choisissez le jour",
+    "timeTitle": "Choisissez l'heure",
+    "confirmTitle": "Récapitulatif de votre demande",
+    "sendWhatsapp": "Confirmer sur WhatsApp",
+    "summaryNote": "WhatsApp s'ouvrira avec un message prêt à envoyer. Il vous suffit de l'envoyer.",
+    "symptomsLabel": "Symptômes",
+    "problemLabel": "Description",
+    "dateLabel": "Jour",
+    "timeLabel": "Heure",
+    "intro": "Bonjour, je souhaite prendre rendez-vous.",
+        "confirmButton": "Confirmer le rendez-vous",
+    "saving": "Enregistrement...",
+    "saveError": "Une erreur est survenue. Réessayez ou contactez-nous sur WhatsApp.",
+    "savedTitle": "Votre demande est enregistrée",
+    "savedText": "Le garage a bien reçu votre demande. Pour une confirmation plus rapide, envoyez-nous aussi le message sur WhatsApp.",
+    "symptoms": {
+      "noise": {
+        "label": "Bruit anormal",
+        "causes": ["Plaquettes ou disques de frein usés", "Roulement ou suspension défectueux", "Courroie ou accessoire du moteur usé"]
+      },
+      "warning": {
+        "label": "Voyant allumé au tableau de bord",
+        "causes": ["Capteur ou système d'injection défaillant", "Problème de batterie ou d'alternateur", "Besoin d'un diagnostic électronique"]
+      },
+      "vibration": {
+        "label": "Vibrations en roulant",
+        "causes": ["Pneus mal équilibrés", "Problème de suspension ou de direction", "Disque de frein voilé"]
+      },
+      "start": {
+        "label": "Démarrage difficile",
+        "causes": ["Batterie faible", "Démarreur ou bougies défaillants", "Problème d'alimentation en carburant"]
+      },
+      "overheat": {
+        "label": "Moteur qui chauffe ou fumée",
+        "causes": ["Manque de liquide de refroidissement ou fuite", "Ventilateur ou thermostat défaillant", "Pompe à eau défectueuse"]
+      },
+      "brakes": {
+        "label": "Freins faibles ou anormaux",
+        "causes": ["Plaquettes ou disques usés", "Manque de liquide de frein ou fuite", "Air dans le circuit de freinage"]
+      }
+    }
+  },
+    "ServicesPage": {
+    "intro": "Tout ce dont votre voiture a besoin, au même endroit, pour toutes les marques.",
+    "ctaText": "Un doute sur le problème ? Prenez rendez-vous, on s'en occupe.",
+    "items": {
+      "mechanic": ["Entretien et révision", "Réparation moteur et boîte de vitesses", "Freinage, suspension et direction"],
+      "bodywork": ["Réparation de chocs et de bosses", "Peinture et retouches", "Remise en état après accident"],
+      "tires": ["Montage et remplacement", "Équilibrage et géométrie", "Réparation de crevaison"],
+      "oil": ["Vidange moteur", "Remplacement des filtres", "Contrôle des niveaux"],
+      "inspection": ["Pré-contrôle avant visite technique", "Vérification des points de sécurité", "Mise en conformité"],
+      "diagnostic": ["Lecture des codes défaut", "Analyse des capteurs et de l'électronique", "Rapport clair et devis"]
+    }
+  },
+  "About": {
+    "title": "À propos de Garage Said",
+    "intro": "Garage Said est un garage situé à Aïn Leuh, au service de tous les automobilistes de la région.",
+    "p1": "Nous prenons en charge la mécanique, la carrosserie, les pneus, la vidange, le contrôle et le diagnostic, pour toutes les marques de voitures.",
+    "p2": "Notre objectif est simple : un travail sérieux, des explications claires et des prix honnêtes, pour que vous repreniez la route en toute confiance.",
+    "valuesTitle": "Nos engagements",
+    "values": {
+      "quality": { "title": "Travail soigné", "desc": "Chaque réparation est faite avec rigueur, avec des pièces adaptées à votre véhicule." },
+      "transparency": { "title": "Transparence", "desc": "Nous vous expliquons le problème et le prix avant d'intervenir." },
+      "speed": { "title": "Rapidité", "desc": "Ouvert tous les jours, pour vous remettre sur la route sans attendre." }
+    },
+    "cta": "Prendre rendez-vous"
+  },
+  "Contact": {
+    "title": "Contact",
+    "intro": "Une question ? Appelez-nous, écrivez-nous sur WhatsApp ou passez au garage.",
+    "addressLabel": "Adresse",
+    "phoneLabel": "Téléphone",
+    "whatsappLabel": "WhatsApp",
+    "hoursLabel": "Horaires",
+    "mapButton": "Voir sur Google Maps",
+    "mapQuery": "Garage Said Aïn Leuh Maroc"
+  },
+    "Shop": {
+    "title": "Boutique d'accessoires",
+    "intro": "Huiles, filtres, accessoires et équipements pour votre voiture, avec livraison.",
+    "all": "Tout",
+    "categories": {
+      "oil": "Huiles",
+      "filters": "Filtres",
+      "interior": "Intérieur",
+      "electronics": "Électronique"
+    },
+    "currency": "DH",
+    "inStock": "En stock",
+    "outOfStock": "Rupture de stock",
+    "noProducts": "Aucun produit dans cette catégorie pour le moment.",
+    "back": "← Retour à la boutique",
+    "deliveryNote": "Livraison disponible",
+    "cashNote": "Paiement en espèces à la livraison",
+    "orderWhatsapp": "Commander sur WhatsApp",
+    "whatsappMessage": "Bonjour, je suis intéressé par ce produit : {name}"
+  },
+      "addToCart": "Ajouter au panier",
+    "added": "Ajouté au panier ✓",
+    "viewCart": "Voir le panier"
+    ,
+      "Cart": {
+    "title": "Mon panier",
+    "empty": "Votre panier est vide.",
+    "browse": "Voir la boutique",
+    "remove": "Retirer",
+    "totalLabel": "Total",
+    "currency": "DH",
+    "deliveryInfo": "Paiement en espèces à la livraison. Les frais de livraison sont confirmés par le garage avant l'envoi.",
+    "formTitle": "Vos informations de livraison",
+    "name": "Nom complet",
+    "phone": "Téléphone",
+    "city": "Ville",
+    "address": "Adresse de livraison",
+    "notes": "Remarques (facultatif)",
+    "submit": "Confirmer la commande",
+    "sending": "Envoi en cours...",
+    "error": "Une erreur est survenue. Réessayez ou contactez-nous sur WhatsApp.",
+    "stockError": "Un produit n'est plus disponible en quantité suffisante. Réduisez la quantité ou contactez-nous.",
+    "successTitle": "Commande reçue",
+    "successText": "Merci ! Le garage vous contactera pour confirmer la livraison. Pour aller plus vite, envoyez-nous aussi le récapitulatif sur WhatsApp.",
+    "refLabel": "Numéro de commande",
+    "whatsappButton": "Envoyer sur WhatsApp",
+    "whatsappIntro": "Bonjour, je viens de passer la commande"
+      },
+      "Meta": {
+    "home": {
+      "title": "Garage Said à Aïn Leuh | Mécanique, carrosserie, pneus et diagnostic",
+      "description": "Garage Said à Aïn Leuh : mécanique, carrosserie, pneus, vidange, contrôle et diagnostic pour toutes les marques. Ouvert 7j/7. Prenez rendez-vous en ligne."
+    },
+    "services": {
+      "title": "Nos services auto à Aïn Leuh | Garage Said",
+      "description": "Mécanique générale, carrosserie, pneus, vidange, contrôle technique et diagnostic électronique pour toutes les marques de voitures."
+    },
+    "about": {
+      "title": "À propos | Garage Said, Aïn Leuh",
+      "description": "Découvrez Garage Said, garage à Aïn Leuh au service des automobilistes de la région : travail soigné, transparence et rapidité."
+    },
+    "contact": {
+      "title": "Contact et adresse | Garage Said, Aïn Leuh",
+      "description": "Contactez Garage Said à Aïn Leuh par téléphone ou WhatsApp, consultez l'adresse et les horaires."
+    },
+    "booking": {
+      "title": "Prendre rendez-vous | Garage Said, Aïn Leuh",
+      "description": "Réservez en ligne votre créneau au garage : décrivez le problème de votre voiture et confirmez par WhatsApp."
+    },
+    "shop": {
+      "title": "Boutique d'accessoires auto | Garage Said",
+      "description": "Huiles, filtres, tapis, housses et accessoires pour votre voiture, avec livraison et paiement en espèces à la livraison."
+    }
+  
+    
+  }
+}
