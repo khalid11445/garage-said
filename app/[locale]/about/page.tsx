@@ -2,11 +2,17 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { buildMetadata } from '@/lib/seo';
 
 const values = ['quality', 'transparency', 'speed'] as const;
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return buildMetadata(locale, 'about', '/about');
+}
 
 export default function AboutPage() {
   const t = useTranslations('About');
+
 
   return (
     <>

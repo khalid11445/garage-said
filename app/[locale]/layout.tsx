@@ -7,7 +7,8 @@ import { CartProvider } from '@/lib/cart';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import '../globals.css';
 import { SITE_URL } from '@/lib/config';
-
+import CookieBanner from '@/components/CookieBanner';
+import ChatWidget from '@/components/ChatWidget';
 const inter = Inter({ subsets: ['latin'] });
 const cairo = Cairo({ subsets: ['arabic', 'latin'] });
 
@@ -40,6 +41,8 @@ export default async function LocaleLayout({
           <CartProvider>
             {children}
             <WhatsAppButton />
+            <CookieBanner />
+            <ChatWidget />
           </CartProvider>
         </NextIntlClientProvider>
       </body>

@@ -6,7 +6,7 @@ import Reveal from '@/components/Reveal';
 import { whatsappLink } from '@/lib/config';
 import { locale } from 'next/root-params';
 import { buildMetadata } from '@/lib/seo';
-
+import Car360 from '@/components/Car360';
 const services = [
   { key: 'mechanic', icon: '🔧' },
   { key: 'bodywork', icon: '🚗' },
@@ -75,6 +75,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        {/* Car Showcase */}
+         <Car360 />
 
         {/* Services */}
         <section className="mx-auto max-w-6xl px-4 py-20">
@@ -112,6 +114,8 @@ export default function HomePage() {
             </div>
           </Reveal>
         </section>
+       
+        {/* Services */}
       </main>
 
       <Footer />

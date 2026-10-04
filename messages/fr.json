@@ -23,9 +23,13 @@
     "inspection": { "name": "Contrôle technique", "desc": "Préparez votre véhicule avant le passage au contrôle." },
     "diagnostic": { "name": "Diagnostic", "desc": "Diagnostic électronique précis pour trouver l'origine de la panne." }
   },
-  "Footer": {
+    "Footer": {
     "address": "Aïn Leuh, Maroc",
-    "hours": "Ouvert tous les jours"
+    "hours": "Ouvert tous les jours",
+    "follow": "Suivez-nous",
+    "privacy": "Confidentialité",
+    "cookies": "Gérer les cookies",
+    "rights": "Tous droits réservés"
   },
   "Booking": {
     "title": "Prendre rendez-vous",
@@ -143,12 +147,12 @@
     "deliveryNote": "Livraison disponible",
     "cashNote": "Paiement en espèces à la livraison",
     "orderWhatsapp": "Commander sur WhatsApp",
-    "whatsappMessage": "Bonjour, je suis intéressé par ce produit : {name}"
-  },
-      "addToCart": "Ajouter au panier",
+    "whatsappMessage": "Bonjour, je suis intéressé par ce produit : {name}",
+    "addToCart": "Ajouter au panier",
     "added": "Ajouté au panier ✓",
     "viewCart": "Voir le panier"
-    ,
+  },
+      
       "Cart": {
     "title": "Mon panier",
     "empty": "Votre panier est vide.",
@@ -197,8 +201,78 @@
     "shop": {
       "title": "Boutique d'accessoires auto | Garage Said",
       "description": "Huiles, filtres, tapis, housses et accessoires pour votre voiture, avec livraison et paiement en espèces à la livraison."
-    }
+    },
+      "Cookies": {
+    "title": "Vos données et les cookies",
+    "text": "Ce site utilise un stockage local indispensable (panier, langue). Avec votre accord, nous utiliserons aussi des outils de mesure publicitaire pour améliorer nos campagnes.",
+    "accept": "Accepter",
+    "refuse": "Refuser",
+    "more": "En savoir plus"
+  },
+  "Privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "Cette page explique quelles données personnelles Garage Said collecte sur ce site, pourquoi, et comment vous pouvez exercer vos droits.",
+    "sections": [
+      { "title": "Données collectées", "text": "Lorsque vous prenez rendez-vous, nous collectons votre nom, votre numéro de téléphone, les informations de votre véhicule et la description du problème. Lorsque vous passez une commande, nous collectons votre nom, votre téléphone, votre ville et votre adresse de livraison. Si vous utilisez l'assistant de discussion, les messages que vous écrivez sont traités pour vous répondre." },
+      { "title": "Pourquoi nous les utilisons", "text": "Ces données servent uniquement à gérer vos rendez-vous et vos commandes, à vous contacter pour les confirmer et à répondre à vos questions. Elles ne sont pas vendues." },
+      { "title": "Cookies et stockage local", "text": "Le site utilise un stockage local indispensable à son fonctionnement (par exemple votre panier et votre choix de langue). Avec votre accord seulement, nous pourrons utiliser des outils de mesure publicitaire (comme le pixel Meta) pour évaluer nos campagnes. Vous pouvez modifier votre choix à tout moment avec « Gérer les cookies » en bas de page." },
+      { "title": "Hébergement", "text": "Les données sont stockées chez des prestataires d'hébergement (Supabase et Vercel) dont les serveurs peuvent se trouver hors du Maroc." },
+      { "title": "Durée de conservation", "text": "Nous conservons vos données le temps nécessaire au traitement de votre demande, puis pendant la durée légale applicable." },
+      { "title": "Vos droits", "text": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant par téléphone ou par WhatsApp. Au Maroc, la protection des données personnelles est encadrée par la loi 09-08 et la CNDP." },
+      { "title": "Contact", "text": "Garage Said, Aïn Leuh." }
+    ]
+  }
   
     
+  },
+    "Car": {
+    "title": "Votre voiture, de la tête aux pneus",
+    "subtitle": "Faites-la tourner, puis explorez chaque partie que nous prenons en charge.",
+    "hint": "Glissez pour faire tourner la voiture",
+    "cta": "Prendre rendez-vous",
+    "more": "Voir tous les services",
+    "parts": {
+      "home": {
+        "label": "Vue 360°",
+        "title": "Vue d'ensemble",
+        "text": "Faites glisser la voiture pour la tourner. Choisissez une zone pour zoomer dessus."
+      },
+      "engine": {
+        "label": "Moteur",
+        "title": "Mécanique et moteur",
+        "text": "Révision, réparation du moteur, courroies, freinage et diagnostic électronique."
+      },
+      "tires": {
+        "label": "Pneus",
+        "title": "Pneus et roues",
+        "text": "Montage, équilibrage, géométrie et réparation de crevaison."
+      },
+      "body": {
+        "label": "Carrosserie",
+        "title": "Carrosserie et peinture",
+        "text": "Réparation de chocs, peinture et remise en état après accident."
+      },
+      "interior": {
+        "label": "Intérieur",
+        "title": "Intérieur et électronique",
+        "text": "Diagnostic des voyants, électronique auto et vérification des points de sécurité."
+      }
+    },
+        "loading": "Chargement des photos..."
+  },
+    "Chat": {
+    "title": "Assistant Garage Said",
+    "subtitle": "Posez vos questions",
+    "greeting": "Bonjour ! Je suis l'assistant du Garage Said. Décrivez-moi le problème de votre voiture ou posez-moi une question sur nos services.",
+    "placeholder": "Écrivez votre message...",
+    "send": "Envoyer",
+    "typing": "L'assistant écrit...",
+    "error": "Désolé, une erreur est survenue. Réessayez ou contactez-nous sur WhatsApp.",
+    "limit": "Vous avez atteint la limite de messages pour aujourd'hui. Contactez-nous sur WhatsApp.",
+    "book": "Prendre rendez-vous",
+    "whatsappMessage": "Bonjour, j'ai une question sur vos services.",
+    "disclaimer": "Réponses automatiques à titre indicatif. Pour un devis, contactez le garage.",
+    "open": "Ouvrir l'assistant",
+    "close": "Fermer"
   }
 }
