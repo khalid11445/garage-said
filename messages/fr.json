@@ -6,6 +6,7 @@
     "contact": "Contact",
     "book": "Prendre RDV"
   },
+
   "Hero": {
     "badge": "Aïn Leuh · Ouvert 7j/7",
     "title": "Votre voiture entre de bonnes mains",
@@ -14,16 +15,36 @@
     "whatsapp": "Écrire sur WhatsApp",
     "whatsappMessage": "Bonjour, je souhaite des informations sur vos services."
   },
+
   "Services": {
     "title": "Nos services",
-    "mechanic": { "name": "Mécanique générale", "desc": "Réparation et entretien de tous types de moteurs et de pannes." },
-    "bodywork": { "name": "Carrosserie", "desc": "Réparation de carrosserie et peinture, avec un travail soigné." },
-    "tires": { "name": "Pneus", "desc": "Remplacement, montage et équilibrage de vos pneus." },
-    "oil": { "name": "Vidange", "desc": "Vidange et changement de filtres, rapide et propre." },
-    "inspection": { "name": "Contrôle technique", "desc": "Préparez votre véhicule avant le passage au contrôle." },
-    "diagnostic": { "name": "Diagnostic", "desc": "Diagnostic électronique précis pour trouver l'origine de la panne." }
+    "mechanic": {
+      "name": "Mécanique générale",
+      "desc": "Réparation et entretien de tous types de moteurs et de pannes."
+    },
+    "bodywork": {
+      "name": "Carrosserie",
+      "desc": "Réparation de carrosserie et peinture, avec un travail soigné."
+    },
+    "tires": {
+      "name": "Pneus",
+      "desc": "Remplacement, montage et équilibrage de vos pneus."
+    },
+    "oil": {
+      "name": "Vidange",
+      "desc": "Vidange et changement de filtres, rapide et propre."
+    },
+    "inspection": {
+      "name": "Contrôle technique",
+      "desc": "Préparez votre véhicule avant le passage au contrôle."
+    },
+    "diagnostic": {
+      "name": "Diagnostic",
+      "desc": "Diagnostic électronique précis pour trouver l'origine de la panne."
+    }
   },
-    "Footer": {
+
+  "Footer": {
     "address": "Aïn Leuh, Maroc",
     "hours": "Ouvert tous les jours",
     "follow": "Suivez-nous",
@@ -31,6 +52,7 @@
     "cookies": "Gérer les cookies",
     "rights": "Tous droits réservés"
   },
+
   "Booking": {
     "title": "Prendre rendez-vous",
     "step1": "Vos infos",
@@ -62,7 +84,7 @@
     "dateLabel": "Jour",
     "timeLabel": "Heure",
     "intro": "Bonjour, je souhaite prendre rendez-vous.",
-        "confirmButton": "Confirmer le rendez-vous",
+    "confirmButton": "Confirmer le rendez-vous",
     "saving": "Enregistrement...",
     "saveError": "Une erreur est survenue. Réessayez ou contactez-nous sur WhatsApp.",
     "savedTitle": "Votre demande est enregistrée",
@@ -70,42 +92,92 @@
     "symptoms": {
       "noise": {
         "label": "Bruit anormal",
-        "causes": ["Plaquettes ou disques de frein usés", "Roulement ou suspension défectueux", "Courroie ou accessoire du moteur usé"]
+        "causes": [
+          "Plaquettes ou disques de frein usés",
+          "Roulement ou suspension défectueux",
+          "Courroie ou accessoire du moteur usé"
+        ]
       },
       "warning": {
         "label": "Voyant allumé au tableau de bord",
-        "causes": ["Capteur ou système d'injection défaillant", "Problème de batterie ou d'alternateur", "Besoin d'un diagnostic électronique"]
+        "causes": [
+          "Capteur ou système d'injection défaillant",
+          "Problème de batterie ou d'alternateur",
+          "Besoin d'un diagnostic électronique"
+        ]
       },
       "vibration": {
         "label": "Vibrations en roulant",
-        "causes": ["Pneus mal équilibrés", "Problème de suspension ou de direction", "Disque de frein voilé"]
+        "causes": [
+          "Pneus mal équilibrés",
+          "Problème de suspension ou de direction",
+          "Disque de frein voilé"
+        ]
       },
       "start": {
         "label": "Démarrage difficile",
-        "causes": ["Batterie faible", "Démarreur ou bougies défaillants", "Problème d'alimentation en carburant"]
+        "causes": [
+          "Batterie faible",
+          "Démarreur ou bougies défaillants",
+          "Problème d'alimentation en carburant"
+        ]
       },
       "overheat": {
         "label": "Moteur qui chauffe ou fumée",
-        "causes": ["Manque de liquide de refroidissement ou fuite", "Ventilateur ou thermostat défaillant", "Pompe à eau défectueuse"]
+        "causes": [
+          "Manque de liquide de refroidissement ou fuite",
+          "Ventilateur ou thermostat défaillant",
+          "Pompe à eau défectueuse"
+        ]
       },
       "brakes": {
         "label": "Freins faibles ou anormaux",
-        "causes": ["Plaquettes ou disques usés", "Manque de liquide de frein ou fuite", "Air dans le circuit de freinage"]
+        "causes": [
+          "Plaquettes ou disques usés",
+          "Manque de liquide de frein ou fuite",
+          "Air dans le circuit de freinage"
+        ]
       }
     }
   },
-    "ServicesPage": {
+
+  "ServicesPage": {
     "intro": "Tout ce dont votre voiture a besoin, au même endroit, pour toutes les marques.",
     "ctaText": "Un doute sur le problème ? Prenez rendez-vous, on s'en occupe.",
     "items": {
-      "mechanic": ["Entretien et révision", "Réparation moteur et boîte de vitesses", "Freinage, suspension et direction"],
-      "bodywork": ["Réparation de chocs et de bosses", "Peinture et retouches", "Remise en état après accident"],
-      "tires": ["Montage et remplacement", "Équilibrage et géométrie", "Réparation de crevaison"],
-      "oil": ["Vidange moteur", "Remplacement des filtres", "Contrôle des niveaux"],
-      "inspection": ["Pré-contrôle avant visite technique", "Vérification des points de sécurité", "Mise en conformité"],
-      "diagnostic": ["Lecture des codes défaut", "Analyse des capteurs et de l'électronique", "Rapport clair et devis"]
+      "mechanic": [
+        "Entretien et révision",
+        "Réparation moteur et boîte de vitesses",
+        "Freinage, suspension et direction"
+      ],
+      "bodywork": [
+        "Réparation de chocs et de bosses",
+        "Peinture et retouches",
+        "Remise en état après accident"
+      ],
+      "tires": [
+        "Montage et remplacement",
+        "Équilibrage et géométrie",
+        "Réparation de crevaison"
+      ],
+      "oil": [
+        "Vidange moteur",
+        "Remplacement des filtres",
+        "Contrôle des niveaux"
+      ],
+      "inspection": [
+        "Pré-contrôle avant visite technique",
+        "Vérification des points de sécurité",
+        "Mise en conformité"
+      ],
+      "diagnostic": [
+        "Lecture des codes défaut",
+        "Analyse des capteurs et de l'électronique",
+        "Rapport clair et devis"
+      ]
     }
   },
+
   "About": {
     "title": "À propos de Garage Said",
     "intro": "Garage Said est un garage situé à Aïn Leuh, au service de tous les automobilistes de la région.",
@@ -113,12 +185,22 @@
     "p2": "Notre objectif est simple : un travail sérieux, des explications claires et des prix honnêtes, pour que vous repreniez la route en toute confiance.",
     "valuesTitle": "Nos engagements",
     "values": {
-      "quality": { "title": "Travail soigné", "desc": "Chaque réparation est faite avec rigueur, avec des pièces adaptées à votre véhicule." },
-      "transparency": { "title": "Transparence", "desc": "Nous vous expliquons le problème et le prix avant d'intervenir." },
-      "speed": { "title": "Rapidité", "desc": "Ouvert tous les jours, pour vous remettre sur la route sans attendre." }
+      "quality": {
+        "title": "Travail soigné",
+        "desc": "Chaque réparation est faite avec rigueur, avec des pièces adaptées à votre véhicule."
+      },
+      "transparency": {
+        "title": "Transparence",
+        "desc": "Nous vous expliquons le problème et le prix avant d'intervenir."
+      },
+      "speed": {
+        "title": "Rapidité",
+        "desc": "Ouvert tous les jours, pour vous remettre sur la route sans attendre."
+      }
     },
     "cta": "Prendre rendez-vous"
   },
+
   "Contact": {
     "title": "Contact",
     "intro": "Une question ? Appelez-nous, écrivez-nous sur WhatsApp ou passez au garage.",
@@ -129,7 +211,8 @@
     "mapButton": "Voir sur Google Maps",
     "mapQuery": "Garage Said Aïn Leuh Maroc"
   },
-    "Shop": {
+
+  "Shop": {
     "title": "Boutique d'accessoires",
     "intro": "Huiles, filtres, accessoires et équipements pour votre voiture, avec livraison.",
     "all": "Tout",
@@ -152,8 +235,8 @@
     "added": "Ajouté au panier ✓",
     "viewCart": "Voir le panier"
   },
-      
-      "Cart": {
+
+  "Cart": {
     "title": "Mon panier",
     "empty": "Votre panier est vide.",
     "browse": "Voir la boutique",
@@ -176,8 +259,9 @@
     "refLabel": "Numéro de commande",
     "whatsappButton": "Envoyer sur WhatsApp",
     "whatsappIntro": "Bonjour, je viens de passer la commande"
-      },
-      "Meta": {
+  },
+
+  "Meta": {
     "home": {
       "title": "Garage Said à Aïn Leuh | Mécanique, carrosserie, pneus et diagnostic",
       "description": "Garage Said à Aïn Leuh : mécanique, carrosserie, pneus, vidange, contrôle et diagnostic pour toutes les marques. Ouvert 7j/7. Prenez rendez-vous en ligne."
@@ -202,33 +286,61 @@
       "title": "Boutique d'accessoires auto | Garage Said",
       "description": "Huiles, filtres, tapis, housses et accessoires pour votre voiture, avec livraison et paiement en espèces à la livraison."
     },
-      "Cookies": {
+
+    "cart": {
+      "title": "Mon panier | Garage Said",
+      "description": "Consultez votre panier et confirmez votre commande auprès de Garage Said."
+    }
+  },
+
+  "Cookies": {
     "title": "Vos données et les cookies",
     "text": "Ce site utilise un stockage local indispensable (panier, langue). Avec votre accord, nous utiliserons aussi des outils de mesure publicitaire pour améliorer nos campagnes.",
     "accept": "Accepter",
     "refuse": "Refuser",
     "more": "En savoir plus"
   },
+
   "Privacy": {
     "title": "Politique de confidentialité",
     "intro": "Cette page explique quelles données personnelles Garage Said collecte sur ce site, pourquoi, et comment vous pouvez exercer vos droits.",
     "sections": [
-      { "title": "Données collectées", "text": "Lorsque vous prenez rendez-vous, nous collectons votre nom, votre numéro de téléphone, les informations de votre véhicule et la description du problème. Lorsque vous passez une commande, nous collectons votre nom, votre téléphone, votre ville et votre adresse de livraison. Si vous utilisez l'assistant de discussion, les messages que vous écrivez sont traités pour vous répondre." },
-      { "title": "Pourquoi nous les utilisons", "text": "Ces données servent uniquement à gérer vos rendez-vous et vos commandes, à vous contacter pour les confirmer et à répondre à vos questions. Elles ne sont pas vendues." },
-      { "title": "Cookies et stockage local", "text": "Le site utilise un stockage local indispensable à son fonctionnement (par exemple votre panier et votre choix de langue). Avec votre accord seulement, nous pourrons utiliser des outils de mesure publicitaire (comme le pixel Meta) pour évaluer nos campagnes. Vous pouvez modifier votre choix à tout moment avec « Gérer les cookies » en bas de page." },
-      { "title": "Hébergement", "text": "Les données sont stockées chez des prestataires d'hébergement (Supabase et Vercel) dont les serveurs peuvent se trouver hors du Maroc." },
-      { "title": "Durée de conservation", "text": "Nous conservons vos données le temps nécessaire au traitement de votre demande, puis pendant la durée légale applicable." },
-      { "title": "Vos droits", "text": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant par téléphone ou par WhatsApp. Au Maroc, la protection des données personnelles est encadrée par la loi 09-08 et la CNDP." },
-      { "title": "Contact", "text": "Garage Said, Aïn Leuh." }
+      {
+        "title": "Données collectées",
+        "text": "Lorsque vous prenez rendez-vous, nous collectons votre nom, votre numéro de téléphone, les informations de votre véhicule et la description du problème. Lorsque vous passez une commande, nous collectons votre nom, votre téléphone, votre ville et votre adresse de livraison. Si vous utilisez l'assistant de discussion, les messages que vous écrivez sont traités pour vous répondre."
+      },
+      {
+        "title": "Pourquoi nous les utilisons",
+        "text": "Ces données servent uniquement à gérer vos rendez-vous et vos commandes, à vous contacter pour les confirmer et à répondre à vos questions. Elles ne sont pas vendues."
+      },
+      {
+        "title": "Cookies et stockage local",
+        "text": "Le site utilise un stockage local indispensable à son fonctionnement (par exemple votre panier et votre choix de langue). Avec votre accord seulement, nous pourrons utiliser des outils de mesure publicitaire (comme le pixel Meta) pour évaluer nos campagnes. Vous pouvez modifier votre choix à tout moment avec « Gérer les cookies » en bas de page."
+      },
+      {
+        "title": "Hébergement",
+        "text": "Les données sont stockées chez des prestataires d'hébergement (Supabase et Vercel) dont les serveurs peuvent se trouver hors du Maroc. Les messages écrits à l'assistant de discussion sont traités par un prestataire d'intelligence artificielle (Anthropic)."
+      },
+      {
+        "title": "Durée de conservation",
+        "text": "Nous conservons vos données le temps nécessaire au traitement de votre demande, puis pendant la durée légale applicable."
+      },
+      {
+        "title": "Vos droits",
+        "text": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant par téléphone ou par WhatsApp. Au Maroc, la protection des données personnelles est encadrée par la loi 09-08 et la CNDP."
+      },
+      {
+        "title": "Contact",
+        "text": "Garage Said, Aïn Leuh."
+      }
     ]
-  }
-  
-    
   },
-    "Car": {
+
+  "Car": {
     "title": "Votre voiture, de la tête aux pneus",
     "subtitle": "Faites-la tourner, puis explorez chaque partie que nous prenons en charge.",
     "hint": "Glissez pour faire tourner la voiture",
+    "loading": "Chargement des photos...",
     "cta": "Prendre rendez-vous",
     "more": "Voir tous les services",
     "parts": {
@@ -257,10 +369,10 @@
         "title": "Intérieur et électronique",
         "text": "Diagnostic des voyants, électronique auto et vérification des points de sécurité."
       }
-    },
-        "loading": "Chargement des photos..."
+    }
   },
-    "Chat": {
+
+  "Chat": {
     "title": "Assistant Garage Said",
     "subtitle": "Posez vos questions",
     "greeting": "Bonjour ! Je suis l'assistant du Garage Said. Décrivez-moi le problème de votre voiture ou posez-moi une question sur nos services.",
