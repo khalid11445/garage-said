@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import CarShowcaseLoader from './CarShowcaseLoader';
+import CarPhoto from './CarPhoto';
 import {
   ASPECT,
   DRAG_INVERT,
@@ -11,13 +12,15 @@ import {
   FRAME_PATH,
   PARTS,
   PART_KEYS,
+  SINGLE_PHOTO,
   angleToFrame,
   type PartKey,
 } from '@/lib/car360';
 
 export default function Car360() {
   const t = useTranslations('Car');
-  const [mode, setMode] = useState<'checking' | 'photos' | 'fallback'>('checking');
+  // checking : on cherche les photos / photos : série 360° / single : une photo / fallback : voiture 3D
+  const [mode, setMode] = useState<'checking' | 'photos' | 'single' | 'fallback'>('checking');
   const [frame, setFrame] = useState(0);
   const [active, setActive] = useState<PartKey>('home');
   const [zoomed, setZoomed] = useState(false);
@@ -40,13 +43,27 @@ export default function Car360() {
     setFrame(n);
   }, []);
 
-  // 1. Y a-t-il des photos ? Sinon on affiche la voiture 3D
+  // 1. Quelles images avons-nous ? Série 360°, sinon une photo, sinon la voiture 3D
   useEffect(() => {
     setDebug(new URLSearchParams(window.location.search).has('debug'));
-    const img = new Image();
-    img.onload = () => setMode('photos');
-    img.onerror = () => setMode('fallback');
-    img.src = FRAME_PATH(0);
+
+    const probe = (src: string, ok: () => void, fail: () => void) => {
+      const img = new Image();
+      img.onload = ok;
+      img.onerror = fail;
+      img.src = src;
+    };
+
+    probe(
+      FRAME_PATH(0),
+      () => setMode('photos'),
+      () =>
+        probe(
+          SINGLE_PHOTO,
+          () => setMode('single'),
+          () => setMode('fallback')
+        )
+    );
   }, []);
 
   // 2. Chargement de toutes les photos en arrière-plan
@@ -163,6 +180,7 @@ export default function Car360() {
 
   if (mode === 'checking') return <div className="mx-auto h-[520px] max-w-6xl px-4 py-20" />;
   if (mode === 'fallback') return <CarShowcaseLoader />;
+  if (mode === 'single') return <CarPhoto />;
 
   const p = PARTS[active];
 

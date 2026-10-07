@@ -6,7 +6,6 @@
     "contact": "Contact",
     "book": "Prendre RDV"
   },
-
   "Hero": {
     "badge": "Aïn Leuh · Ouvert 7j/7",
     "title": "Votre voiture entre de bonnes mains",
@@ -15,7 +14,6 @@
     "whatsapp": "Écrire sur WhatsApp",
     "whatsappMessage": "Bonjour, je souhaite des informations sur vos services."
   },
-
   "Services": {
     "title": "Nos services",
     "mechanic": {
@@ -43,7 +41,6 @@
       "desc": "Diagnostic électronique précis pour trouver l'origine de la panne."
     }
   },
-
   "Footer": {
     "address": "Aïn Leuh, Maroc",
     "hours": "Ouvert tous les jours",
@@ -52,7 +49,6 @@
     "cookies": "Gérer les cookies",
     "rights": "Tous droits réservés"
   },
-
   "Booking": {
     "title": "Prendre rendez-vous",
     "step1": "Vos infos",
@@ -140,7 +136,6 @@
       }
     }
   },
-
   "ServicesPage": {
     "intro": "Tout ce dont votre voiture a besoin, au même endroit, pour toutes les marques.",
     "ctaText": "Un doute sur le problème ? Prenez rendez-vous, on s'en occupe.",
@@ -177,7 +172,6 @@
       ]
     }
   },
-
   "About": {
     "title": "À propos de Garage Said",
     "intro": "Garage Said est un garage situé à Aïn Leuh, au service de tous les automobilistes de la région.",
@@ -200,7 +194,6 @@
     },
     "cta": "Prendre rendez-vous"
   },
-
   "Contact": {
     "title": "Contact",
     "intro": "Une question ? Appelez-nous, écrivez-nous sur WhatsApp ou passez au garage.",
@@ -211,7 +204,6 @@
     "mapButton": "Voir sur Google Maps",
     "mapQuery": "Garage Said Aïn Leuh Maroc"
   },
-
   "Shop": {
     "title": "Boutique d'accessoires",
     "intro": "Huiles, filtres, accessoires et équipements pour votre voiture, avec livraison.",
@@ -235,7 +227,6 @@
     "added": "Ajouté au panier ✓",
     "viewCart": "Voir le panier"
   },
-
   "Cart": {
     "title": "Mon panier",
     "empty": "Votre panier est vide.",
@@ -260,7 +251,6 @@
     "whatsappButton": "Envoyer sur WhatsApp",
     "whatsappIntro": "Bonjour, je viens de passer la commande"
   },
-
   "Meta": {
     "home": {
       "title": "Garage Said à Aïn Leuh | Mécanique, carrosserie, pneus et diagnostic",
@@ -285,14 +275,8 @@
     "shop": {
       "title": "Boutique d'accessoires auto | Garage Said",
       "description": "Huiles, filtres, tapis, housses et accessoires pour votre voiture, avec livraison et paiement en espèces à la livraison."
-    },
-
-    "cart": {
-      "title": "Mon panier | Garage Said",
-      "description": "Consultez votre panier et confirmez votre commande auprès de Garage Said."
     }
   },
-
   "Cookies": {
     "title": "Vos données et les cookies",
     "text": "Ce site utilise un stockage local indispensable (panier, langue). Avec votre accord, nous utiliserons aussi des outils de mesure publicitaire pour améliorer nos campagnes.",
@@ -300,7 +284,6 @@
     "refuse": "Refuser",
     "more": "En savoir plus"
   },
-
   "Privacy": {
     "title": "Politique de confidentialité",
     "intro": "Cette page explique quelles données personnelles Garage Said collecte sur ce site, pourquoi, et comment vous pouvez exercer vos droits.",
@@ -335,12 +318,14 @@
       }
     ]
   },
-
   "Car": {
     "title": "Votre voiture, de la tête aux pneus",
     "subtitle": "Faites-la tourner, puis explorez chaque partie que nous prenons en charge.",
     "hint": "Glissez pour faire tourner la voiture",
     "loading": "Chargement des photos...",
+    "photoSubtitle": "Choisissez une zone pour zoomer et découvrir ce que nous prenons en charge.",
+    "photoHint": "Choisissez une zone pour zoomer",
+    "photoHome": "Choisissez une zone pour zoomer sur le moteur, les pneus, la carrosserie ou l'intérieur.",
     "cta": "Prendre rendez-vous",
     "more": "Voir tous les services",
     "parts": {
@@ -371,7 +356,6 @@
       }
     }
   },
-
   "Chat": {
     "title": "Assistant Garage Said",
     "subtitle": "Posez vos questions",
@@ -386,5 +370,11 @@
     "disclaimer": "Réponses automatiques à titre indicatif. Pour un devis, contactez le garage.",
     "open": "Ouvrir l'assistant",
     "close": "Fermer"
+  },
+  "Showcase": {
+    "title": "Nos accessoires auto",
+    "subtitle": "Faites tourner le cercle pour découvrir nos produits, livrés chez vous.",
+    "hint": "Glissez pour faire tourner",
+    "cta": "Voir toute la boutique"
   }
 }

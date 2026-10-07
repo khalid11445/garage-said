@@ -7,6 +7,8 @@ import { whatsappLink } from '@/lib/config';
 import { locale } from 'next/root-params';
 import { buildMetadata } from '@/lib/seo';
 import Car360 from '@/components/Car360';
+import FeaturedProducts from '@/components/FeaturedProducts';
+export const dynamic = 'force-dynamic';
 const services = [
   { key: 'mechanic', icon: '🔧' },
   { key: 'bodywork', icon: '🚗' },
@@ -77,6 +79,8 @@ export default function HomePage() {
         </section>
         {/* Car Showcase */}
          <Car360 />
+         {/* Produits en vedette */}
+         <FeaturedProducts />
 
         {/* Services */}
         <section className="mx-auto max-w-6xl px-4 py-20">
