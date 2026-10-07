@@ -376,5 +376,13 @@
     "subtitle": "Faites tourner le cercle pour découvrir nos produits, livrés chez vous.",
     "hint": "Glissez pour faire tourner",
     "cta": "Voir toute la boutique"
-  }
+  },
+  "Gallery": {
+  "title": "Nos prestations de près",
+  "engine": "Moteur",
+  "tires": "Pneus",
+  "body": "Carrosserie et phares",
+  "interior": "Intérieur",
+  "rear": "Vue arrière"
+}
 }

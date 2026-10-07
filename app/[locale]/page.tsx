@@ -4,11 +4,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Reveal from '@/components/Reveal';
 import { whatsappLink } from '@/lib/config';
-import { locale } from 'next/root-params';
 import { buildMetadata } from '@/lib/seo';
 import Car360 from '@/components/Car360';
 import FeaturedProducts from '@/components/FeaturedProducts';
 export const dynamic = 'force-dynamic';
+import CarGallery from '@/components/CarGallery';
 const services = [
   { key: 'mechanic', icon: '🔧' },
   { key: 'bodywork', icon: '🚗' },
@@ -80,6 +80,16 @@ export default function HomePage() {
         {/* Car Showcase */}
          <Car360 />
          {/* Produits en vedette */}
+         <CarGallery
+  title={t('Gallery.title')}
+  items={[
+    { src: '/car/details/moteur.png', label: t('Gallery.engine') },
+    { src: '/car/details/pneu.png', label: t('Gallery.tires') },
+    { src: '/car/details/phare.png', label: t('Gallery.body') },
+    { src: '/car/details/interieure.png', label: t('Gallery.interior') },
+    { src: '/car/details/arriere.png', label: t('Gallery.rear') },
+  ]}
+/>
          <FeaturedProducts />
 
         {/* Services */}

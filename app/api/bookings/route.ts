@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getSupabaseAdmin } from '@/lib/supabase';
+import { notifyTelegram, bookingMessage } from '@/lib/notify';
 
 const clip = (value: unknown, max: number) =>
   typeof value === 'string' ? value.trim().slice(0, max) : '';
@@ -27,6 +28,8 @@ export async function POST(request: Request) {
   const symptoms = Array.isArray(data.symptoms)
     ? data.symptoms.filter((s): s is string => typeof s === 'string').slice(0, 10)
     : [];
+  const plate = clip(data.plate, 20);
+  const description = clip(data.description, 1000);
 
   try {
     const supabase = getSupabaseAdmin();
@@ -35,10 +38,10 @@ export async function POST(request: Request) {
       phone,
       brand,
       model,
-      plate: clip(data.plate, 20) || null,
+      plate: plate || null,
       service,
       symptoms,
-      description: clip(data.description, 1000) || null,
+      description: description || null,
       booking_date: date,
       booking_time: time,
       locale: clip(data.locale, 5) || null,
@@ -52,6 +55,11 @@ export async function POST(request: Request) {
     console.error(e);
     return NextResponse.json({ error: 'Erreur serveur' }, { status: 500 });
   }
+
+  // Notification Telegram : on attend l'envoi, mais une erreur ici n'annule jamais la réservation
+  await notifyTelegram(
+    bookingMessage({ name, phone, brand, model, plate, service, symptoms, description, date, time })
+  );
 
   return NextResponse.json({ ok: true });
 }

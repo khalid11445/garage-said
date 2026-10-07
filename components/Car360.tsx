@@ -16,11 +16,12 @@ import {
   angleToFrame,
   type PartKey,
 } from '@/lib/car360';
+import { MODEL_URL } from '@/lib/carParts';
 
 export default function Car360() {
   const t = useTranslations('Car');
-  // checking : on cherche les photos / photos : série 360° / single : une photo / fallback : voiture 3D
-  const [mode, setMode] = useState<'checking' | 'photos' | 'single' | 'fallback'>('checking');
+  // checking : on cherche / photos : série 360° / model : vrai modèle 3D / single : une photo / fallback : voiture stylisée
+  const [mode, setMode] = useState<'checking' | 'photos' | 'model' | 'single' | 'fallback'>('checking');
   const [frame, setFrame] = useState(0);
   const [active, setActive] = useState<PartKey>('home');
   const [zoomed, setZoomed] = useState(false);
@@ -43,27 +44,35 @@ export default function Car360() {
     setFrame(n);
   }, []);
 
-  // 1. Quelles images avons-nous ? Série 360°, sinon une photo, sinon la voiture 3D
+  // 1. Que avons-nous ? Série 360°, sinon vrai modèle 3D, sinon une photo, sinon la voiture stylisée
   useEffect(() => {
     setDebug(new URLSearchParams(window.location.search).has('debug'));
 
-    const probe = (src: string, ok: () => void, fail: () => void) => {
+    let cancelled = false;
+    const set = (m: 'photos' | 'model' | 'single' | 'fallback') => {
+      if (!cancelled) setMode(m);
+    };
+
+    const probeImage = (src: string, ok: () => void, fail: () => void) => {
       const img = new Image();
       img.onload = ok;
       img.onerror = fail;
       img.src = src;
     };
 
-    probe(
-      FRAME_PATH(0),
-      () => setMode('photos'),
-      () =>
-        probe(
-          SINGLE_PHOTO,
-          () => setMode('single'),
-          () => setMode('fallback')
-        )
-    );
+    const toPhoto = () => probeImage(SINGLE_PHOTO, () => set('single'), () => set('fallback'));
+
+    const toModel = () => {
+      fetch(MODEL_URL, { method: 'HEAD' })
+        .then((r) => (r.ok ? set('model') : toPhoto()))
+        .catch(toPhoto);
+    };
+
+    probeImage(FRAME_PATH(0), () => set('photos'), toModel);
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   // 2. Chargement de toutes les photos en arrière-plan
@@ -179,6 +188,7 @@ export default function Car360() {
   };
 
   if (mode === 'checking') return <div className="mx-auto h-[520px] max-w-6xl px-4 py-20" />;
+  if (mode === 'model') return <CarShowcaseLoader model />;
   if (mode === 'fallback') return <CarShowcaseLoader />;
   if (mode === 'single') return <CarPhoto />;
 
